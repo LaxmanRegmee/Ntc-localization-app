@@ -1,0 +1,16 @@
+{
+    "app_name": "एनटीसी एप",
+    "main_balance": "मुख्य ब्यालेन्स",
+    "valid_until": "१५ अप्रिल २०२४ सम्म मान्य",
+    "recharge": "रिचार्ज",
+    "data_pack": "डाटा प्याक",
+    "voice_pack": "भ्वाइस प्याक",
+    "offers": "अफरहरू",
+    "calls": "कलहरू",
+    "payments": "भुक्तानी",
+    "quick_recharge": "द्रुत रिचार्ज",
+    "sim_services": "सिम सेवाहरू",
+    "settings": "सेटिङहरू",
+    "change_to_english": "English",
+    "balance_amount": "रु. {{amount}}"
+}

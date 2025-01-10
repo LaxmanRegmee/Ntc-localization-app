@@ -1,0 +1,8 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Recharge" class="action-bar" />
+    <StackLayout padding="20">
+        <TextField hint="Enter your number" keyboardType="phone" />
+        <TextField hint="Enter amount" keyboardType="number" />
+        <Button text="Recharge" tap="onRechargeTap" class="btn btn-primary" />
+    </StackLayout>
+</Page>

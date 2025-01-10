@@ -1,0 +1,66 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+    <ActionBar class="ntc-header">
+        <GridLayout columns="auto, *, auto">
+            <Label text="NTC" class="font-bold text-lg" col="0" margin="0 10" />
+            <Label text="{{ currentLanguage === 'en' ? 'नेपाली' : 'English' }}" 
+                   tap="{{ toggleLanguage }}"
+                   class="text-white p-2" col="2" />
+        </GridLayout>
+    </ActionBar>
+
+    <ScrollView>
+        <StackLayout>
+            <!-- Balance Card -->
+            <StackLayout class="balance-card">
+                <Label text="{{ 'main_balance' | translate }}" class="balance-title" />
+                <Label text="{{ balance }}" class="balance-amount" />
+                <Label text="{{ 'valid_until' | translate }}" class="balance-validity" />
+            </StackLayout>
+
+            <!-- Grid Menu -->
+            <GridLayout columns="*, *, *" rows="auto, auto, auto" class="ntc-grid">
+                <!-- Row 1 -->
+                <StackLayout col="0" row="0" class="grid-item" tap="onRechargeTap">
+                    <Label text="📱" class="grid-icon" />
+                    <Label text="{{ 'recharge' | translate }}" textWrap="true" class="text-xs" />
+                </StackLayout>
+                <StackLayout col="1" row="0" class="grid-item">
+                    <Label text="📊" class="grid-icon" />
+                    <Label text="{{ 'data_pack' | translate }}" textWrap="true" class="text-xs" />
+                </StackLayout>
+                <StackLayout col="2" row="0" class="grid-item">
+                    <Label text="💰" class="grid-icon" />
+                    <Label text="{{ 'voice_pack' | translate }}" textWrap="true" class="text-xs" />
+                </StackLayout>
+
+                <!-- Row 2 -->
+                <StackLayout col="0" row="1" class="grid-item">
+                    <Label text="🎁" class="grid-icon" />
+                    <Label text="{{ 'offers' | translate }}" textWrap="true" class="text-xs" />
+                </StackLayout>
+                <StackLayout col="1" row="1" class="grid-item">
+                    <Label text="📞" class="grid-icon" />
+                    <Label text="{{ 'calls' | translate }}" textWrap="true" class="text-xs" />
+                </StackLayout>
+                <StackLayout col="2" row="1" class="grid-item">
+                    <Label text="💳" class="grid-icon" />
+                    <Label text="{{ 'payments' | translate }}" textWrap="true" class="text-xs" />
+                </StackLayout>
+
+                <!-- Row 3 -->
+                <StackLayout col="0" row="2" class="grid-item">
+                    <Label text="⚡" class="grid-icon" />
+                    <Label text="{{ 'quick_recharge' | translate }}" textWrap="true" class="text-xs" />
+                </StackLayout>
+                <StackLayout col="1" row="2" class="grid-item">
+                    <Label text="📱" class="grid-icon" />
+                    <Label text="{{ 'sim_services' | translate }}" textWrap="true" class="text-xs" />
+                </StackLayout>
+                <StackLayout col="2" row="2" class="grid-item">
+                    <Label text="⚙️" class="grid-icon" />
+                    <Label text="{{ 'settings' | translate }}" textWrap="true" class="text-xs" />
+                </StackLayout>
+            </GridLayout>
+        </StackLayout>
+    </ScrollView>
+</Page>

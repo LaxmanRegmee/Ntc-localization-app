@@ -1,0 +1,50 @@
+# NativeScript
+hooks/
+node_modules/
+platforms/
+dist/
+temp/
+
+# NativeScript application
+app/**/*.js
+app/**/*.js.map
+!app/webpack.config.js
+
+# Generated files
+.migration_backup/
+.update_backup/
+.cloud/
+.preview-*/
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+*.log
+*.backup
+Thumbs.db
+
+# Build files
+report/
+coverage/
+*.tgz
+
+# Environment files
+.env
+.env.*
+
+# Debug files
+debug.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Compiled output
+**/*.js.map
+**/*.css.map
+
+# App specific
+App_Resources/Android/src/main/res/drawable-*/
+App_Resources/iOS/build/

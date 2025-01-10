@@ -1,0 +1,16 @@
+{
+    "app_name": "NTC App",
+    "main_balance": "Main Balance",
+    "valid_until": "Valid until 15th April 2024",
+    "recharge": "Recharge",
+    "data_pack": "Data Pack",
+    "voice_pack": "Voice Pack",
+    "offers": "Offers",
+    "calls": "Calls",
+    "payments": "Payments",
+    "quick_recharge": "Quick Recharge",
+    "sim_services": "SIM Services",
+    "settings": "Settings",
+    "change_to_nepali": "नेपाली",
+    "balance_amount": "Rs. {{amount}}"
+}
