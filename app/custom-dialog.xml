@@ -1,0 +1,5 @@
+<StackLayout xmlns="http://schemas.nativescript.org/tns.xsd" class="custom-dialog">
+    <Label text="{{ title }}" class="dialog-title" />
+    <Label text="{{ message }}" class="dialog-message" />
+    <Button text="OK" tap="{{ onClose }}" class="btn btn-primary" />
+</StackLayout>

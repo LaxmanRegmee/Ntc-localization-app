@@ -12,9 +12,9 @@
         <StackLayout>
             <!-- Balance Card -->
             <StackLayout class="balance-card">
-                <Label text="{{ 'main_balance' | translate }}" class="balance-title" />
+                <Label text="{{ translate('main_balance') }}" class="balance-title" />
                 <Label text="{{ balance }}" class="balance-amount" />
-                <Label text="{{ 'valid_until' | translate }}" class="balance-validity" />
+                <Label text="{{ translate('valid_until') }}" class="balance-validity" />
             </StackLayout>
 
             <!-- Grid Menu -->
@@ -22,43 +22,43 @@
                 <!-- Row 1 -->
                 <StackLayout col="0" row="0" class="grid-item" tap="onRechargeTap">
                     <Label text="📱" class="grid-icon" />
-                    <Label text="{{ 'recharge' | translate }}" textWrap="true" class="text-xs" />
+                    <Label text="{{ translate('recharge') }}" textWrap="true" class="text-xs" />
                 </StackLayout>
                 <StackLayout col="1" row="0" class="grid-item">
                     <Label text="📊" class="grid-icon" />
-                    <Label text="{{ 'data_pack' | translate }}" textWrap="true" class="text-xs" />
+                    <Label text="{{ translate('data_pack') }}" textWrap="true" class="text-xs" />
                 </StackLayout>
                 <StackLayout col="2" row="0" class="grid-item">
                     <Label text="💰" class="grid-icon" />
-                    <Label text="{{ 'voice_pack' | translate }}" textWrap="true" class="text-xs" />
+                    <Label text="{{ translate('voice_pack') }}" textWrap="true" class="text-xs" />
                 </StackLayout>
 
                 <!-- Row 2 -->
                 <StackLayout col="0" row="1" class="grid-item">
                     <Label text="🎁" class="grid-icon" />
-                    <Label text="{{ 'offers' | translate }}" textWrap="true" class="text-xs" />
+                    <Label text="{{ translate('offers') }}" textWrap="true" class="text-xs" />
                 </StackLayout>
                 <StackLayout col="1" row="1" class="grid-item">
                     <Label text="📞" class="grid-icon" />
-                    <Label text="{{ 'calls' | translate }}" textWrap="true" class="text-xs" />
+                    <Label text="{{ translate('calls') }}" textWrap="true" class="text-xs" />
                 </StackLayout>
                 <StackLayout col="2" row="1" class="grid-item">
                     <Label text="💳" class="grid-icon" />
-                    <Label text="{{ 'payments' | translate }}" textWrap="true" class="text-xs" />
+                    <Label text="{{ translate('payments') }}" textWrap="true" class="text-xs" />
                 </StackLayout>
 
                 <!-- Row 3 -->
                 <StackLayout col="0" row="2" class="grid-item">
                     <Label text="⚡" class="grid-icon" />
-                    <Label text="{{ 'quick_recharge' | translate }}" textWrap="true" class="text-xs" />
+                    <Label text="{{ translate('quick_recharge') }}" textWrap="true" class="text-xs" />
                 </StackLayout>
                 <StackLayout col="1" row="2" class="grid-item">
                     <Label text="📱" class="grid-icon" />
-                    <Label text="{{ 'sim_services' | translate }}" textWrap="true" class="text-xs" />
+                    <Label text="{{ translate('sim_services') }}" textWrap="true" class="text-xs" />
                 </StackLayout>
                 <StackLayout col="2" row="2" class="grid-item">
                     <Label text="⚙️" class="grid-icon" />
-                    <Label text="{{ 'settings' | translate }}" textWrap="true" class="text-xs" />
+                    <Label text="{{ translate('settings') }}" textWrap="true" class="text-xs" />
                 </StackLayout>
             </GridLayout>
         </StackLayout>

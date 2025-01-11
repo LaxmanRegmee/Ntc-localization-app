@@ -3,15 +3,13 @@ import { ApplicationSettings } from '@nativescript/core';
 export class LanguageService {
   private static readonly LANGUAGE_KEY = 'selected_language';
   private currentLanguage: string;
-  private translations: { [key: string]: { [key: string]: string } } = {};
+  private translations: any;
 
   constructor() {
-    // Load translations
-    this.translations.en = require('../i18n/en.json');
-    this.translations.ne = require('../i18n/ne.json');
-    
     // Get saved language or default to Nepali
     this.currentLanguage = ApplicationSettings.getString(LanguageService.LANGUAGE_KEY, 'ne');
+    // Load translations based on the current language
+    this.translations = this.loadTranslations();
   }
 
   getCurrentLanguage(): string {
@@ -21,16 +19,25 @@ export class LanguageService {
   setLanguage(lang: string) {
     this.currentLanguage = lang;
     ApplicationSettings.setString(LanguageService.LANGUAGE_KEY, lang);
+    this.translations = this.loadTranslations(); // Reload translations when language changes
   }
 
   translate(key: string, params: { [key: string]: any } = {}): string {
-    let text = this.translations[this.currentLanguage]?.[key] || key;
-    
-    // Replace parameters
-    Object.keys(params).forEach(param => {
-      text = text.replace(`{{${param}}}`, params[param].toString());
-    });
-    
-    return text;
+    let translation = this.translations[key] || key;
+    if (params) {
+      Object.keys(params).forEach(param => {
+        translation = translation.replace(`{{${param}}}`, params[param].toString());
+      });
+    }
+    return translation;
+  }
+
+  private loadTranslations() {
+    // Load the appropriate translation file based on the current language
+    if (this.currentLanguage === 'ne') {
+      return require('../i18n/ne.json');
+    } else {
+      return require('../i18n/en.json');
+    }
   }
 }

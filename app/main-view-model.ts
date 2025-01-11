@@ -20,6 +20,7 @@ export class HelloWorldModel extends Observable {
     const newLang = currentLang === 'en' ? 'ne' : 'en';
     this.languageService.setLanguage(newLang);
     this.notifyPropertyChange('currentLanguage', newLang);
+    this.notifyPropertyChange('translations', {}); // Notify that translations have changed
   }
 
   get currentLanguage(): string {

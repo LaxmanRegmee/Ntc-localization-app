@@ -72,8 +72,13 @@ TextField {
     background-color: #fff; /* White background color */
     border-radius: 8px;
     padding: 15px; /* Increase padding for more space inside the field */
-    margin-bottom: 20px; /* Increase margin for more space between fields */
+    margin-bottom: 10px; /* Add space between TextFields */
     font-size: 18px; /* Increase font size for better readability */
+}
+
+/* Add styles for placeholder text */
+TextField::placeholder {
+    color: #666666; /* Darker gray color */
 }
 
 Button {
@@ -82,4 +87,25 @@ Button {
     border-radius: 8px;
     padding: 15px; /* Increase padding for a bigger button */
     font-size: 18px; /* Increase font size for better readability */
+}
+
+.custom-dialog {
+    background-color: #003087; /* Dark blue background color */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+.dialog-title {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.dialog-message {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 20px;
 }

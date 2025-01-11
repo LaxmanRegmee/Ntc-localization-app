@@ -12,5 +12,12 @@
     "sim_services": "सिम सेवाहरू",
     "settings": "सेटिङहरू",
     "change_to_english": "English",
-    "balance_amount": "रु. {{amount}}"
+    "balance_amount": "रु. {{amount}}",
+    "enter_your_number": "तपाईंको नम्बर प्रविष्ट गर्नुहोस्",
+    "enter_amount": "रकम प्रविष्ट गर्नुहोस्",
+    "recharge_successful": "रिचार्ज सफल भयो",
+    "recharge_message": "यो नम्बर {{number}} मा रु. {{amount}} जम्मा गरिएको छ।",
+    "error": "त्रुटि",
+    "enter_number_and_amount": "कृपया नम्बर र रकम दुवै प्रविष्ट गर्नुहोस्।",
+    "ok": "ठिक छ"
 }

@@ -12,5 +12,12 @@
     "sim_services": "SIM Services",
     "settings": "Settings",
     "change_to_nepali": "नेपाली",
-    "balance_amount": "Rs. {{amount}}"
+    "balance_amount": "Rs. {{amount}}",
+    "enter_your_number": "Enter your number",
+    "enter_amount": "Enter amount",
+    "recharge_successful": "Recharge Successful",
+    "recharge_message": "This number {{number}} has been credited with Rs. {{amount}}.",
+    "error": "Error",
+    "enter_number_and_amount": "Please enter both number and amount.",
+    "ok": "OK"
 }
