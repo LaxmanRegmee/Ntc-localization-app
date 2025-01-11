@@ -1,6 +1,5 @@
-import { EventData, Page, TextField, Dialogs, Frame } from '@nativescript/core';
+import { EventData, Page, TextField, Dialogs } from '@nativescript/core';
 import { LanguageService } from './services/language.service';
-import { CustomDialogViewModel } from './custom-dialog';
 
 export function onNavigatingTo(args: EventData) {
     const page = <Page>args.object;
@@ -22,16 +21,11 @@ export function onRechargeTap(args: EventData) {
     const translate = (key: string, params?: { [key: string]: string }) => languageService.translate(key, params);
 
     if (number && amount) {
-        page.showModal(
-            'app/custom-dialog',
-            {
-                context: { 
-                    title: translate('recharge_successful'), 
-                    message: translate('recharge_message', { number, amount }) 
-                },
-                closeCallback: () => { }
-            }
-        );
+        Dialogs.alert({
+            title: translate('recharge_successful'),
+            message: translate('recharge_message', { number, amount }),
+            okButtonText: translate('ok')
+        });
     } else {
         Dialogs.alert({
             title: translate('error'),

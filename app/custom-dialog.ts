@@ -1,4 +1,4 @@
-import { EventData, Observable, Page, View } from '@nativescript/core';
+import { EventData, Observable, Page } from '@nativescript/core';
 
 export class CustomDialogViewModel extends Observable {
     constructor(private page: Page, private params: { title: string, message: string }) {
