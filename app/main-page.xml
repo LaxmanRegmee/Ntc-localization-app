@@ -24,7 +24,7 @@
                     <Label text="📱" class="grid-icon" />
                     <Label text="{{ translate('recharge') }}" textWrap="true" class="text-xs" />
                 </StackLayout>
-                <StackLayout col="1" row="0" class="grid-item">
+                <StackLayout col="1" row="0" class="grid-item" tap="onDataPackTap">
                     <Label text="📊" class="grid-icon" />
                     <Label text="{{ translate('data_pack') }}" textWrap="true" class="text-xs" />
                 </StackLayout>

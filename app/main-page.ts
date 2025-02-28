@@ -10,3 +10,8 @@ export function onRechargeTap(args: EventData) {
   const frame = Frame.topmost();
   frame.navigate("recharge-page");
 }
+
+export function onDataPackTap(args: EventData) {
+  const frame = Frame.topmost();
+  frame.navigate("data-pack-page");
+}

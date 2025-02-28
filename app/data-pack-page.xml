@@ -1,0 +1,27 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar class="ntc-header">
+        <GridLayout columns="auto, *, auto">
+            <Label text="NTC" class="font-bold text-lg text-blue-500" col="0" margin="0 10" />
+            <Label text="{{ translate('data_pack') }}" class="text-blue-500 p-2" col="1" />
+        </GridLayout>
+    </ActionBar>
+    <ScrollView>
+        <StackLayout padding="20" class="bg-gray-100">
+            <Label text="{{ translate('choose_data_pack') }}" class="data-pack-title" />
+            <StackLayout>
+                <StackLayout class="data-pack-item" tap="onDataPackTap" bindingContext="{{ dataPacks[0] }}">
+                    <Label text="{{ name }}" class="data-pack-name" />
+                    <Label text="{{ price }}" class="data-pack-price" />
+                </StackLayout>
+                <StackLayout class="data-pack-item" tap="onDataPackTap" bindingContext="{{ dataPacks[1] }}">
+                    <Label text="{{ name }}" class="data-pack-name" />
+                    <Label text="{{ price }}" class="data-pack-price" />
+                </StackLayout>
+                <StackLayout class="data-pack-item" tap="onDataPackTap" bindingContext="{{ dataPacks[2] }}">
+                    <Label text="{{ name }}" class="data-pack-name" />
+                    <Label text="{{ price }}" class="data-pack-price" />
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</Page>

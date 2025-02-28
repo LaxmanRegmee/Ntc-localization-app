@@ -19,5 +19,11 @@
     "recharge_message": "यो नम्बर {{number}} मा रु. {{amount}} जम्मा गरिएको छ।",
     "error": "त्रुटि",
     "enter_number_and_amount": "कृपया नम्बर र रकम दुवै प्रविष्ट गर्नुहोस्।",
-    "ok": "ठिक छ"
+    "ok": "ठिक छ",
+    "choose_data_pack": "डाटा प्याक छान्नुहोस्",
+    "data_pack_1": "डाटा प्याक १",
+    "data_pack_2": "डाटा प्याक २",
+    "data_pack_3": "डाटा प्याक ३",
+    "purchase_successful": "खरिद सफल भयो",
+    "purchase_message": "तपाईंले {{name}} रु. {{price}} मा सफलतापूर्वक खरिद गर्नुभयो।"
 }

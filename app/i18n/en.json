@@ -19,5 +19,11 @@
     "recharge_message": "This number {{number}} has been credited with Rs. {{amount}}.",
     "error": "Error",
     "enter_number_and_amount": "Please enter both number and amount.",
-    "ok": "OK"
+    "ok": "OK",
+    "choose_data_pack": "Choose Data Pack",
+    "data_pack_1": "Data Pack 1",
+    "data_pack_2": "Data Pack 2",
+    "data_pack_3": "Data Pack 3",
+    "purchase_successful": "Purchase Successful",
+    "purchase_message": "You have successfully purchased {{name}} for {{price}}."
 }
