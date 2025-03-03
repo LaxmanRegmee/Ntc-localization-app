@@ -15,3 +15,12 @@ export function onDataPackTap(args: EventData) {
   const frame = Frame.topmost();
   frame.navigate("data-pack-page");
 }
+
+export function showPopupBanner(args: EventData) {
+  const page = <Page>(<any>args.object).page;
+  page.showModal("popup-banner", {
+    context: {},
+    closeCallback: () => { },
+    fullscreen: true
+  });
+}

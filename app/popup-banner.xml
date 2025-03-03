@@ -1,0 +1,23 @@
+<StackLayout xmlns="http://schemas.nativescript.org/tns.xsd" class="popup-banner">
+    <Carousel>
+        <CarouselItem>
+            <StackLayout class="banner-slide">
+                <Label text="Offer 1" class="banner-title" />
+                <Label text="Details of Offer 1" class="banner-details" />
+            </StackLayout>
+        </CarouselItem>
+        <CarouselItem>
+            <StackLayout class="banner-slide">
+                <Label text="Offer 2" class="banner-title" />
+                <Label text="Details of Offer 2" class="banner-details" />
+            </StackLayout>
+        </CarouselItem>
+        <CarouselItem>
+            <StackLayout class="banner-slide">
+                <Label text="Offer 3" class="banner-title" />
+                <Label text="Details of Offer 3" class="banner-details" />
+            </StackLayout>
+        </CarouselItem>
+    </Carousel>
+    <Button text="Close" tap="{{ onClose }}" class="btn btn-primary" />
+</StackLayout>

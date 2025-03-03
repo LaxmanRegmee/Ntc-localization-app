@@ -17,24 +17,32 @@
                 <Label text="{{ translate('valid_until') }}" class="balance-validity" />
             </StackLayout>
 
-            <!-- Grid Menu -->
-            <GridLayout columns="*, *, *" rows="auto, auto, auto" class="ntc-grid">
-                <!-- Row 1 -->
-                <StackLayout col="0" row="0" class="grid-item" tap="onRechargeTap">
+            <!-- New Row -->
+            <GridLayout columns="*, *, *" rows="auto" class="new-row">
+                <StackLayout col="0" class="grid-item" tap="onRechargeTap">
                     <Label text="📱" class="grid-icon" />
                     <Label text="{{ translate('recharge') }}" textWrap="true" class="text-xs" />
                 </StackLayout>
-                <StackLayout col="1" row="0" class="grid-item" tap="onDataPackTap">
+                <StackLayout col="1" class="grid-item" tap="onDataPackTap">
                     <Label text="📊" class="grid-icon" />
                     <Label text="{{ translate('data_pack') }}" textWrap="true" class="text-xs" />
                 </StackLayout>
-                <StackLayout col="2" row="0" class="grid-item">
+                <StackLayout col="2" class="grid-item">
+                    <Label text="📈" class="grid-icon" />
+                    <Label text="Stats" textWrap="true" class="text-xs" />
+                </StackLayout>
+            </GridLayout>
+
+            <!-- Grid Menu -->
+            <GridLayout columns="*, *, *" rows="auto, auto, auto" class="ntc-grid">
+                <!-- Row 1 -->
+                <StackLayout col="0" row="0" class="grid-item">
                     <Label text="💰" class="grid-icon" />
                     <Label text="{{ translate('voice_pack') }}" textWrap="true" class="text-xs" />
                 </StackLayout>
 
                 <!-- Row 2 -->
-                <StackLayout col="0" row="1" class="grid-item">
+                <StackLayout col="0" row="1" class="grid-item" tap="showPopupBanner">
                     <Label text="🎁" class="grid-icon" />
                     <Label text="{{ translate('offers') }}" textWrap="true" class="text-xs" />
                 </StackLayout>

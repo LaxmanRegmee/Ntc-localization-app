@@ -12,7 +12,7 @@ Page {
 .ntc-grid {
     background-color: #f5f6fa;
     padding: 50px;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .grid-item {
@@ -143,4 +143,61 @@ Button {
     font-weight: bold;
     color: #003087;
     margin-bottom: 20px;
+}
+
+.popup-banner {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+.banner-slide {
+    background-color: #003087;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.banner-title {
+    color: #ffdd00;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.banner-details {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.new-row {
+    background-color: #003087;
+    /* Dark blue background color */
+    margin: 50px;
+    padding: 50px;
+    /* Optional: Add some padding if needed */
+    border-radius: 25px;
+}
+
+.new-row .grid-item {
+    background-color: transparent;
+    /* Ensure grid items have no background */
+    text-align: center;
+    /* Center align text */
+}
+
+.new-row .grid-icon {
+    font-size: 24px;
+    color: #ffdd00;
+    /* Yellow color for icons */
+    margin-bottom: 8px;
+}
+
+.new-row .text-xs {
+    font-size: 12px;
+    color: #ffffff;
+    /* White color for text */
 }
