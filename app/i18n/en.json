@@ -15,7 +15,7 @@
     "balance_amount": "Rs. {{amount}}",
     "enter_your_number": "Enter your number",
     "enter_amount": "Enter amount",
-    "recharge_successful": "Recharge Successful",
+    "recharge_successful": "Recharge successful!",
     "recharge_message": "This number {{number}} has been credited with Rs. {{amount}}.",
     "error": "Error",
     "enter_number_and_amount": "Please enter both number and amount.",
@@ -25,5 +25,7 @@
     "data_pack_2": "Data Pack 2",
     "data_pack_3": "Data Pack 3",
     "purchase_successful": "Purchase Successful",
-    "purchase_message": "You have successfully purchased {{name}} for {{price}}."
+    "purchase_message": "You have successfully purchased {{name}} for {{price}}.",
+    "invalid_number": "Invalid number. Please enter a valid phone number.",
+    "invalid_amount": "Invalid amount. Please enter a valid number."
 }

@@ -8,6 +8,6 @@
     <StackLayout padding="20">
         <TextField id="numberField" hint="{{ translate('enter_your_number') }}" keyboardType="phone" />
         <TextField id="amountField" hint="{{ translate('enter_amount') }}" keyboardType="number" />
-        <Button text="{{ translate('recharge') }}" tap="onRechargeTap" class="btn btn-primary" />
+        <Button text="{{ translate('recharge') }}" tap="{{ onRechargeTap }}" class="btn btn-primary" />
     </StackLayout>
 </Page>
