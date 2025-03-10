@@ -1,6 +1,6 @@
 {
     "app_name": "NTC App",
-    "main_balance": "Main Balance",
+    "current_balance": "Current Balance",
     "valid_until": "Valid until 15th April 2024",
     "recharge": "Recharge",
     "data_pack": "Data Pack",

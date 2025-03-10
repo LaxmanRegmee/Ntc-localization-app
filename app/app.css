@@ -5,11 +5,10 @@ Page {
 .ntc-header {
     background-color: #00368e;
     color: #feb832;
-    height: 500px;
+
 }
 
 .ntc-grid {
-
     padding: 50px;
     margin-top: 10px;
 }
@@ -41,29 +40,34 @@ Page {
     color: white;
 }
 
+.balance-amount,
+.balance-validity,
+.balance-title,
+.balance-label {
+    margin-top: 100px;
+
+}
+
 .balance-title {
-    padding: 60px;
-    font-size: 14px;
-    opacity: 0.9;
+    margin-left: 720px;
+    font-size: 16px;
+
 }
 
 .balance-amount {
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 5px;
+    margin-left: 780px;
+    font-size: 16px;
+    margin-top: 8px;
+
 }
 
 .balance-validity {
+    margin-left: 650px;
     font-size: 12px;
-    opacity: 0.7;
     margin-top: 5px;
 }
 
-.balance-label {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-}
+
 
 /* Add styles for TextField and Button */
 TextField {
@@ -83,19 +87,25 @@ TextField {
 /* Add styles for placeholder text */
 TextField::placeholder {
     color: #666666;
-    /* Darker gray color */
+
 }
 
 Button {
+    margin-left: 2px;
+    margin-top: 60px;
+    width: 40%;
+    height: 110px;
     color: #ffffff;
     /* White text color */
     background-color: #00368e;
     /* Blue background color */
-    border-radius: 8px;
+    border-radius: 12px;
+    border-color: #feb832;
     padding: 15px;
     /* Increase padding for a bigger button */
-    font-size: 18px;
+    font-size: 16px;
     /* Increase font size for better readability */
+
 }
 
 .custom-dialog {
@@ -177,8 +187,8 @@ Button {
 .new-row {
     background-color: #00368e;
     /* Dark blue background color */
-    margin: 50px;
-    padding: 50px;
+    margin: 30px;
+    padding: 20px;
     /* Optional: Add some padding if needed */
     border-radius: 25px;
 }
@@ -205,11 +215,31 @@ Button {
 }
 
 /* Add styles for Image components */
-.new-row .grid-icon,
-.ntc-grid .grid-icon {
-    width: 100px;
+.new-row .grid-icon {
+    width: 120px;
     /* Set the desired width */
-    height: 100px;
+    height: 120px;
     /* Set the desired height */
     margin-bottom: 10px;
+}
+
+.ntc-grid .grid-icon {
+    border-radius: 50px;
+    width: 100px;
+    /* Set the desired width */
+    height: 160px;
+    /* Set the desired height */
+    margin-bottom: 10px;
+}
+
+.horizontal-line {
+
+    width: 500px;
+    height: 2px;
+    background-color: #ffffff;
+    /* Change color as needed */
+    margin-left: 520px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* Adjust spacing as needed */
 }

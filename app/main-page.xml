@@ -10,14 +10,21 @@
 
     <ScrollView>
         <StackLayout>
+
             <!-- Balance Card -->
+
             <StackLayout class="balance-card">
-                <Label text="{{ translate('main_balance') }}" class="balance-title" />
+                <Label text="{{ translate('current_balance') }}" class="balance-title" />
                 <Label text="{{ balance }}" class="balance-amount" />
+                <!-- Horizontal Line -->
+                <Label text="" class="horizontal-line" />
                 <Label text="{{ translate('valid_until') }}" class="balance-validity" />
+                <Label text="" class="horizontal-line" />
+                <Label text="{{ validity }}" class="balance-validity" />
             </StackLayout>
 
             <!-- New Row -->
+
             <GridLayout columns="*, *, *" rows="auto" class="new-row">
                 <StackLayout col="0" class="grid-item" tap="onRechargeTap">
                     <Image src="~/images/recharge.png" class="grid-icon" />
@@ -34,14 +41,17 @@
             </GridLayout>
 
             <!-- Grid Menu -->
+
             <GridLayout columns="*, *, *" rows="auto, auto, auto" class="ntc-grid">
                 <!-- Row 1 -->
+
                 <StackLayout col="0" row="0" class="grid-item">
                     <Image src="~/images/voice-pack.png" class="grid-icon" />
                     <Label text="{{ translate('voice_pack') }}" textWrap="true" class="text-xs" />
                 </StackLayout>
 
                 <!-- Row 2 -->
+
                 <StackLayout col="0" row="1" class="grid-item" tap="showPopupBanner">
                     <Image src="~/images/offers.png" class="grid-icon" />
                     <Label text="{{ translate('offers') }}" textWrap="true" class="text-xs" />
@@ -56,6 +66,7 @@
                 </StackLayout>
 
                 <!-- Row 3 -->
+                
                 <StackLayout col="0" row="2" class="grid-item">
                     <Image src="~/images/quick-recharge.png" class="grid-icon" />
                     <Label text="{{ translate('quick_recharge') }}" textWrap="true" class="text-xs" />
