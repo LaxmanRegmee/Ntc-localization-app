@@ -1,16 +1,87 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('~/fonts/Inter-Black.ttf');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('~/fonts/Inter-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('~/fonts/Inter-ExtraBold.ttf');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('~/fonts/Inter-ExtraLight.ttf');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('~/fonts/Inter-Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('~/fonts/Inter-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('~/fonts/Inter-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('~/fonts/Inter-SemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('~/fonts/Inter-Thin.ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+
 Page {
-    background: linear-gradient(180deg, #e6e6e6, #ccddfd);
+    background: linear-gradient(180deg, #e6e6e6, #cadeff);
+}
+.action-bar{
+    background-color: #00368D;
+    color: #FEB831;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .ntc-header {
-    background-color: #00368e;
-    color: #feb832;
-
+    background-color: #00368D;
+    color: #FEB831;
 }
 
 .ntc-grid {
-    padding: 50px;
-    margin-top: 10px;
+    padding: 40px;
 }
 
 .grid-item {
@@ -23,71 +94,65 @@ Page {
 
 .grid-icon {
     font-size: 24px;
-    color: #00368e;
+    color: #00368D;
     margin-bottom: 8px;
 }
 
 .text-xs {
     font-size: 12px;
-    color: #00368e;
+    color: #00368D;
     font-weight: 500;
 }
 
 .balance-card {
-    background-color: #00368e;
+    background-color: #00368D;
     max-width: fit-content;
-    height: 700px;
+    height: 740px;
     color: white;
-}
-
-.balance-amount,
-.balance-validity,
-.balance-title,
-.balance-label {
-    margin-top: 100px;
-
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .balance-title {
-    margin-left: 720px;
-    font-size: 16px;
-
+   
+    text-align: right;
+    font-size: 15px;
+    font-family: 'Inter';
+    font-weight: 300;
+    margin-bottom: 10px;
 }
 
 .balance-amount {
-    margin-left: 780px;
-    font-size: 16px;
-    margin-top: 8px;
-
+    font-family: 'Inter';
+    text-align: right;
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 20px;
 }
 
 .balance-validity {
-    margin-left: 650px;
-    font-size: 12px;
-    margin-top: 5px;
+    font-family: 'Inter';
+    text-align: right;
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 20px;
 }
-
-
+.balance-amount,.balance-title,.balance-validity{
+    margin-right: 30px;
+}
 
 /* Add styles for TextField and Button */
 TextField {
-    color: #00368e;
-    /* Black text color */
+    color: #00368D;
     background-color: #fff;
-    /* White background color */
     border-radius: 8px;
     padding: 15px;
-    /* Increase padding for more space inside the field */
     margin-bottom: 10px;
-    /* Add space between TextFields */
-    font-size: 18px;
-    /* Increase font size for better readability */
+    font-size: 16px;
 }
 
-/* Add styles for placeholder text */
 TextField::placeholder {
     color: #666666;
-
 }
 
 Button {
@@ -96,21 +161,15 @@ Button {
     width: 40%;
     height: 110px;
     color: #ffffff;
-    /* White text color */
-    background-color: #00368e;
-    /* Blue background color */
+    background-color: #00368D;
     border-radius: 12px;
-    border-color: #feb832;
+    border-color: #FEB831;
     padding: 15px;
-    /* Increase padding for a bigger button */
     font-size: 16px;
-    /* Increase font size for better readability */
-
 }
 
 .custom-dialog {
-    background-color: #00368e;
-    /* Dark blue background color */
+    background-color: #00368D;
     padding: 20px;
     border-radius: 10px;
     width: 80%;
@@ -131,7 +190,7 @@ Button {
 }
 
 .data-pack-item {
-    background-color: #00368e;
+    background-color: #00368D;
     border-radius: 8px;
     padding: 34px;
     margin-bottom: 16px;
@@ -146,13 +205,13 @@ Button {
 
 .data-pack-price {
     font-size: 12px;
-    color: #feb832;
+    color: #FEB831;
 }
 
 .data-pack-title {
     font-size: 24px;
     font-weight: bold;
-    color: #00368e;
+    color: #00368D;
     margin-bottom: 20px;
 }
 
@@ -165,14 +224,14 @@ Button {
 }
 
 .banner-slide {
-    background-color: #00368e;
+    background-color: #00368D;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 10px;
 }
 
 .banner-title {
-    color: #feb832;
+    color: #FEB831;
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -185,61 +244,49 @@ Button {
 }
 
 .new-row {
-    background-color: #00368e;
-    /* Dark blue background color */
-    margin: 30px;
-    padding: 20px;
-    /* Optional: Add some padding if needed */
+    background-color: #00368D;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 90%;
+    height: 230px;
     border-radius: 25px;
 }
 
 .new-row .grid-item {
     background-color: transparent;
-    /* Ensure grid items have no background */
     text-align: center;
-    /* Center align text */
 }
-
 
 .new-row .grid-icon {
     font-size: 24px;
-    color: #feb832;
-    /* Yellow color for icons */
+    color: #FEB831;
     margin-bottom: 8px;
 }
 
 .new-row .text-xs {
     font-size: 12px;
     color: #ffffff;
-    /* White color for text */
 }
 
-/* Add styles for Image components */
 .new-row .grid-icon {
     width: 120px;
-    /* Set the desired width */
     height: 120px;
-    /* Set the desired height */
     margin-bottom: 10px;
 }
 
 .ntc-grid .grid-icon {
     border-radius: 50px;
     width: 100px;
-    /* Set the desired width */
     height: 160px;
-    /* Set the desired height */
     margin-bottom: 10px;
 }
 
 .horizontal-line {
-
-    width: 500px;
+    width: 450px;
     height: 2px;
-    background-color: #ffffff;
-    /* Change color as needed */
-    margin-left: 520px;
+    background-color: #8d8d8d;
+    margin-left: 580px;
     margin-top: 10px;
     margin-bottom: 10px;
-    /* Adjust spacing as needed */
 }

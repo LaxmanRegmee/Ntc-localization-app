@@ -1,13 +1,13 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
     <ActionBar class="ntc-header">
         <GridLayout columns="auto, *, auto">
-            <Label text="NTC" class="font-bold text-lg" col="0" margin="0 10" />
+        
             <Label text="{{ translate('recharge') }}" class="text-white p-2" col="1" />
         </GridLayout>
     </ActionBar>
-    <StackLayout padding="20">
-        <TextField id="numberField" hint="{{ translate('enter_your_number') }}" keyboardType="phone" />
-        <TextField id="amountField" hint="{{ translate('enter_amount') }}" keyboardType="number" />
-        <Button text="{{ translate('recharge') }}" tap="{{ onRechargeTap }}" class="btn btn-primary" />
+    <StackLayout padding="20" >
+        <TextField id="numberField" hint="{{ translate('enter_your_number') }}" keyboardType="phone" marginBottom="7" height="40" style="border-radius: 0;"  />
+        <TextField id="amountField" hint="{{ translate('enter_amount') }}" keyboardType="number" marginBottom="7" height="40" style="border-radius: 0;" />
+        <Button text="{{ translate('recharge') }}" tap="{{ onRechargeTap }}" style="border-radius: 0;" />
     </StackLayout>
 </Page>

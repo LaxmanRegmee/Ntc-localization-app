@@ -1,26 +1,26 @@
-<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
-    <ActionBar class="ntc-header">
-        <GridLayout columns="auto, *, auto">
-            <Label text="NTC" class="font-bold text-lg" col="0" margin="0 10" />
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+    <ActionBar title="NTC" class="action-bar" >
+    <GridLayout columns="auto, *, auto">
+            <Label text="NTC" class="ntc-header" margin ="10"/>
             <Label text="{{ currentLanguage === 'en' ? 'नेपाली' : 'English' }}" 
                    tap="{{ toggleLanguage }}"
-                   class="text-white p-2" col="2" />
+                   class="ntc-header"/>
         </GridLayout>
-    </ActionBar>
-
+        </ActionBar>
     <ScrollView>
         <StackLayout>
 
             <!-- Balance Card -->
 
-            <StackLayout class="balance-card">
-                <Label text="{{ translate('current_balance') }}" class="balance-title" />
+            <StackLayout class="p-20 balance-card">
+                <Label text="Current Balance" class="balance-title" />
                 <Label text="{{ balance }}" class="balance-amount" />
-                <!-- Horizontal Line -->
                 <Label text="" class="horizontal-line" />
-                <Label text="{{ translate('valid_until') }}" class="balance-validity" />
+                <Label text="{{ validUntilText }}" class="balance-title" />
+                <Label text="{{ validUntilDate }}" class="balance-validity" />
                 <Label text="" class="horizontal-line" />
-                <Label text="{{ validity }}" class="balance-validity" />
+                <Label text="User" class="balance-title" />
+                <Label text="{{ user }}" class="balance-amount" />
             </StackLayout>
 
             <!-- New Row -->
