@@ -7,12 +7,14 @@ export class HelloWorldModel extends Observable {
   private _validUntilText: string;
   private _validUntilDate: string;
   private _user: string = "9866225000";
+  private _isEnglish: boolean;
 
   constructor() {
     super();
     this.languageService = new LanguageService();
     this._validUntilText = this.translate('valid_until');
     this._validUntilDate = "2027-03-08"; // Example date, you can set this dynamically
+    this._isEnglish = this.languageService.getCurrentLanguage() === 'en';
     this.notifyPropertyChange('currentLanguage', this.currentLanguage);
   }
 
@@ -24,7 +26,9 @@ export class HelloWorldModel extends Observable {
     const currentLang = this.languageService.getCurrentLanguage();
     const newLang = currentLang === 'en' ? 'ne' : 'en';
     this.languageService.setLanguage(newLang);
+    this._isEnglish = newLang === 'en';
     this.notifyPropertyChange('currentLanguage', newLang);
+    this.notifyPropertyChange('isEnglish', this._isEnglish);
     this.notifyPropertyChange('translations', {}); // Notify that translations have changed
     this._validUntilText = this.translate('valid_until');
     this.notifyPropertyChange('validUntilText', this._validUntilText);
@@ -48,5 +52,9 @@ export class HelloWorldModel extends Observable {
 
   get user(): string {
     return this._user;
+  }
+
+  get isEnglish(): boolean {
+    return this._isEnglish;
   }
 }

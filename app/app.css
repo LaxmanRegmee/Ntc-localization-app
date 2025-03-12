@@ -64,7 +64,8 @@
 Page {
     background: linear-gradient(180deg, #e6e6e6, #cadeff);
 }
-.action-bar{
+
+.action-bar {
     background-color: #00368D;
     color: #FEB831;
     padding: 20px;
@@ -84,6 +85,29 @@ Page {
     padding: 40px;
 }
 
+.ntc-grid .grid-item {
+    margin: 10px;
+    padding: 10px;
+    height: 250px;
+    background-color: #ffffff;
+    border-radius: 24px;
+
+}
+
+.ntc-grid .grid-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+.ntc-grid .text-xs {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 11px;
+    color: #333333;
+
+}
+
 .grid-item {
     background-color: white;
     border-radius: 12px;
@@ -99,9 +123,11 @@ Page {
 }
 
 .text-xs {
-    font-size: 12px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 11px;
     color: #00368D;
-    font-weight: 500;
+
 }
 
 .balance-card {
@@ -114,7 +140,7 @@ Page {
 }
 
 .balance-title {
-   
+
     text-align: right;
     font-size: 15px;
     font-family: 'Inter';
@@ -137,7 +163,10 @@ Page {
     font-size: 15px;
     margin-bottom: 20px;
 }
-.balance-amount,.balance-title,.balance-validity{
+
+.balance-amount,
+.balance-title,
+.balance-validity {
     margin-right: 30px;
 }
 
@@ -265,20 +294,22 @@ Button {
 }
 
 .new-row .text-xs {
-    font-size: 12px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 11px;
     color: #ffffff;
 }
 
 .new-row .grid-icon {
-    width: 120px;
-    height: 120px;
-    margin-bottom: 10px;
+    width: 150px;
+    height: 110px;
+    margin-bottom: 20px;
 }
 
 .ntc-grid .grid-icon {
     border-radius: 50px;
     width: 100px;
-    height: 160px;
+    height: 130px;
     margin-bottom: 10px;
 }
 
@@ -289,4 +320,28 @@ Button {
     margin-left: 580px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.action-bar-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+
+}
+
+.action-bar-title {
+    text-align: left;
+    font-family: 'Inter';
+    margin-right: 350px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #FEB831;
+
+}
+
+.language-label {
+    font-size: 16px;
+    color: #FEB831;
+    cursor: pointer;
 }
