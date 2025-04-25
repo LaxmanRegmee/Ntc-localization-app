@@ -1,0 +1,23 @@
+export type RootStackParamList = {
+    Login: undefined;
+    Home: undefined;
+    Recharge: undefined;
+    DataPack: undefined;
+    VoicePack: undefined;
+    Offers: undefined;
+    Calls: undefined;
+    Payments: undefined;
+    Settings: undefined;
+    VAS: undefined;
+    ESIM: undefined;
+    FriendsFamily: undefined;
+    Services: undefined;
+    Utilities: undefined;
+    Complain: undefined;
+    BalanceInquiry: undefined;
+    BalanceTransfer: undefined;
+    CustomerCare: undefined;
+    Enable4G: undefined;
+    SpecialInquiry: undefined;
+    Profile: undefined;
+};
